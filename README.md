@@ -33,7 +33,7 @@ Sistema criado para Processo de Seleção, utilizando PHP-Laravel.
 
       php artisan migrate
 
-- Povoar o banco de dados (pode demorar <strong>vários</strong> minutos):
+- Povoar o banco de dados (pode demorar <strong>vários</strong> minutos, cerca de 30; no entanto, o sistema pode ser utilizado enquanto os dados são carregados):
 
       php artisan db:seed
 
