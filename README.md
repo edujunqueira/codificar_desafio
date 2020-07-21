@@ -45,4 +45,16 @@ Sistema criado para Processo de Seleção, utilizando PHP-Laravel.
 
 ## Utilizando
 
--
+- Acessando as APIs:
+    - Mostrar os top 5 deputados que mais pediram reembolso de verbas indenizatórias por mês, considerando somente o ano de 2019:
+    
+            http://127.0.0.1:8000/api/gastadores
+
+    - Mostrar o ranking das redes sociais mais utilizadas dentre os deputados, ordenado de forma decrescente:
+    
+            http://127.0.0.1:8000/api/redesSociais
+        
+- Consumir as APIs (exemplo):
+    <p align="center"><img src="https://imgur.com/NQF6sCK.png"></img></p>
+    
+    - Apertando algum dos botões, é mostrado um exemplo de consumação da API.
