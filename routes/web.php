@@ -15,6 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', "HomeController@homePage");
 
-Route::get('/gastadores', "DeputadoController@getGastadores");
+Route::get('/api/gastadores', "DeputadoController@getGastadores");
 
-Route::get('/redesSociais', "SocialController@getRedesSociais");
+Route::get('/api/redesSociais', "SocialController@getRedesSociais");

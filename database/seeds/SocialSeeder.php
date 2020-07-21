@@ -13,6 +13,8 @@ class SocialSeeder extends Seeder
      */
     public function run()
     {
+        // Intervalo entre requisições: o intervalo de término de uma requisição e início de outra deve ser de, no mínimo, um segundo.
+        sleep(1);
 
         // pedimos a lista de deputados com as suas redes sociais
         $response = Http::get('http://dadosabertos.almg.gov.br/ws/deputados/lista_telefonica?formato=json');

@@ -13,6 +13,8 @@ class DeputadoSeeder extends Seeder
      */
     public function run()
     {
+        // como é a primeira requisição, não preciamos de delay
+        
         // pedimos a lista de deputados em exercicio
         $response = Http::get('http://dadosabertos.almg.gov.br/ws/deputados/em_exercicio?formato=json');
 

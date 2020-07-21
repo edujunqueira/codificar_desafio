@@ -8,7 +8,9 @@ class HomeController extends Controller
 {
     public function homePage()
     {
-        
-        return view('welcome');
+        return view('home',[
+            'gastadores' => DeputadoController::getGastadores()->getOriginalContent(),
+            'redesMaisUsadas' => SocialController::getRedesSociais()->getOriginalContent()
+        ]);
     }
 }

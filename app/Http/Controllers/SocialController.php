@@ -8,7 +8,7 @@ use App\Social;
 
 class SocialController extends Controller
 {
-    public function getRedesSociais()
+    public static function getRedesSociais()
     {
         // usando a função do modelo, retornamos o resultado do query
         // temos os 5 meses em que um deputado mais gastou

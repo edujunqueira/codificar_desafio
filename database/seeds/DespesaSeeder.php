@@ -18,6 +18,9 @@ class DespesaSeeder extends Seeder
 
         foreach ($allDeputados as $deputado) {
 
+            // Intervalo entre requisições: o intervalo de término de uma requisição e início de outra deve ser de, no mínimo, um segundo.
+            sleep(1);
+
             // get request para a as datas de cada deputado
             $responseData = Http::get('https://dadosabertos.almg.gov.br/ws/prestacao_contas/verbas_indenizatorias/legislatura_atual/deputados/' . $deputado->id . '/datas?formato=json')
                 ->json()["list"];

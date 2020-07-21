@@ -8,7 +8,7 @@ use App\Deputado;
 
 class DeputadoController extends Controller
 {
-    public function getGastadores()
+    public static function getGastadores()
     {
         // usando a função do modelo, retornamos o resultado do query
         // temos os 5 meses em que um deputado mais gastou
