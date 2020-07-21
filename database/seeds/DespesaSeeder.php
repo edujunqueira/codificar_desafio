@@ -46,9 +46,10 @@ class DespesaSeeder extends Seeder
 
                     foreach ($responseDespesa as $despesa) {
                         if($despesa["idDeputado"]){
-
                             // para cada despesa do get, criamos uma despesa
-                            App\Despesa::createDespesa($despesa);
+                            foreach ($despesa['listaDetalheVerba'] as $subDespesa) {
+                                App\Despesa::createDespesa($subDespesa);
+                            }
                         }
                     }
                 }

@@ -15,6 +15,7 @@ class SocialController extends Controller
         $redesMaisUsadas = Social::redesMaisUsadas();
 
         // retornamos uma 'response()', transformando o dado em JSON, e o formatando
-        return response()->json($redesMaisUsadas, 200, [], JSON_PRETTY_PRINT);
+        return response()->json($redesMaisUsadas, 200, [], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)
+                         ->header('Content-Type', 'application/json');
     }
 }

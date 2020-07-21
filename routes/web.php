@@ -15,6 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', "HomeController@homePage");
 
-Route::get('/api/gastadores', "DeputadoController@getGastadores");
+Route::get('/api/gastadores', "DeputadoController@getGastadoresAnual");
+
+Route::get('/api/gastadores/{mes}', "DeputadoController@getGastadores");
+
+//Route::get('/api/gastadores', "DeputadoController@getGastadores");
 
 Route::get('/api/redesSociais', "SocialController@getRedesSociais");

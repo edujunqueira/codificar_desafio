@@ -15,8 +15,8 @@ class Despesa extends Model
     {
         $despesa = new Despesa();
         $despesa->deputado_id = $desp["idDeputado"];
-        $despesa->valor = $desp["valor"];
-        $despesa->data = $desp["dataReferencia"]["$"];
+        $despesa->valor = $desp["valorReembolsado"];
+        $despesa->data = $desp["dataEmissao"]["$"];
 
         // procurando o deputado que está referenciado por deputado_id, e linkando os dois objetos
         $deputado = Deputado::find($desp["idDeputado"]);
